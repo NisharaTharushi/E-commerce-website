@@ -66,9 +66,10 @@ This document includes:
 |  GitHub             | Version control and collaboration       |
 
 ---
-<pre>
+
 ## 📁 Project Structure
 
+<pre>
 Ecommerce-UI-Testing/
 │
 ├── tests/                            # ✅ Test scripts (test_*.py)
