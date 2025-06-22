@@ -1,6 +1,6 @@
 ## 🔧 Selenium Test Automation for "E-Commerce Website" ##
 
-# 🌐 Project Overview
+#  Project Overview 🌐
 
 This repository contains **automated UI and functional test scripts** developed using **Python, Selenium WebDriver**, and the **Page Object Model (POM)** for:
 
