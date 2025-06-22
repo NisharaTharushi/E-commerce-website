@@ -29,12 +29,12 @@ Test scripts are structured using the **Page Object Model (POM)** design pattern
 
 Scripts were written individually for the following pages and components:
 
-- 🏠 **Home Page** — Page load, logo, header, and navigation  
-- 🛍 **Products Page** — Add to cart, product visibility, modal behavior  
-- 🛒 **Cart Page** — Product verification, quantity, removal, checkout modal  
-- 📝 **Signup Page** — Registration with valid and invalid data  
-- 🔐 **Login Page** — Login with valid/invalid credentials  
-- 📤 **Contact Us Page** — Form submission and validation  
+-  **Home Page** — Page load, logo, header, and navigation  
+-  **Products Page** — Add to cart, product visibility, modal behavior  
+-  **Cart Page** — Product verification, quantity, removal, checkout modal  
+-  **Signup Page** — Registration with valid and invalid data  
+-  **Login Page** — Login with valid/invalid credentials  
+-  **Contact Us Page** — Form submission and validation  
 ---
 
 ## 🧾 Test Case Documentation
@@ -58,12 +58,12 @@ This document includes:
 
 | Tool/Library         | Description                             |
 |----------------------|-----------------------------------------|
-| 🐍 Python 3.x         | Main programming language               |
-| 🧪 Selenium WebDriver | Browser automation framework            |
-| 🧱 POM Pattern        | Structured and scalable automation      |
-| 🧪 Pytest             | Test execution framework                |
-| 🌐 ChromeDriver       | For automated testing in Chrome         |
-| 🧩 GitHub             | Version control and collaboration       |
+|  Python 3.x         | Main programming language               |
+|  Selenium WebDriver | Browser automation framework            |
+|  POM Pattern        | Structured and scalable automation      |
+|  Pytest             | Test execution framework                |
+|  ChromeDriver       | For automated testing in Chrome         |
+|  GitHub             | Version control and collaboration       |
 
 ---
 
@@ -87,10 +87,10 @@ Ecommerce-UI-Testing/
 │   ├── login_page.py
 │   └── contact_us_page.py
 │
-├── Test_cases.md                     # 🧪 Manual test case documentation
-├── requirements.txt                  # 📦 Python dependencies
-├── README.md                         # 📘 Project overview and usage guide
-└── .gitignore                        # 🚫 Ignored files and folders
+├── Test_cases.md                     #  Manual test case documentation
+├── requirements.txt                  #  Python dependencies
+├── README.md                         #  Project overview and usage guide
+└── .gitignore                        #  Ignored files and folders
 
 ---
 
