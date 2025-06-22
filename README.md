@@ -1,4 +1,3 @@
-<pre>
 ## 🔧 Selenium Test Automation for "E-Commerce Website" ##
 
 #  Project Overview 🌐
@@ -15,12 +14,12 @@ This repository contains **automated UI and functional test scripts** developed 
 
 I created **modular, reusable test scripts for each main page and functionality** of the website. Each script focuses on:
 
-- ✅ Functional testing of forms, buttons, and cart features  
-- ✅ UI element presence and validation  
-- ✅ Modal popups and alert handling  
-- ✅ Positive and negative user flows  
-- ✅ Page navigation and redirection testing  
-- ✅ Full test coverage of user registration and login process  
+-  Functional testing of forms, buttons, and cart features  
+-  UI element presence and validation  
+-  Modal popups and alert handling  
+-  Positive and negative user flows  
+-  Page navigation and redirection testing  
+-  Full test coverage of user registration and login process  
 
 Test scripts are structured using the **Page Object Model (POM)** design pattern for easy maintenance and code reuse.
 
@@ -67,7 +66,7 @@ This document includes:
 |  GitHub             | Version control and collaboration       |
 
 ---
-
+<pre>
 ## 📁 Project Structure
 
 Ecommerce-UI-Testing/
@@ -94,6 +93,7 @@ Ecommerce-UI-Testing/
 └── .gitignore                        #  Ignored files and folders
 
 ---
+</pre>
 
 ## 🚀 How to Run the Tests
 
