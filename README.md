@@ -72,7 +72,7 @@ This document includes:
 <pre>
 Ecommerce-UI-Testing/
 │
-├── tests/                            # ✅ Test scripts (test_*.py)
+├── tests/                            # ✅ Test scripts 
 │   ├── home_test.py
 │   ├── products_test.py
 │   ├── cart_test.py
@@ -80,7 +80,7 @@ Ecommerce-UI-Testing/
 │   ├── login_test.py
 │   └── contact_us_test.py
 │
-├── pages/                            # 📄 Page Object classes (one per page)
+├── pages/                            # 📄 Page Object classes 
 │   ├── home_page.py
 │   ├── products_page.py
 │   ├── cart_page.py
