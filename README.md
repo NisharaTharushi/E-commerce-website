@@ -102,4 +102,4 @@ Ecommerce-UI-Testing/
    ```bash
    git clone https://github.com/your-username/ecommerce-ui-testing.git
    cd ecommerce-ui-testing
-</pre>
+
