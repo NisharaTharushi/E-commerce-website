@@ -122,7 +122,7 @@ class Home():
             print("")
 
 
-    # click brands
+    # click brands test
     def click_all_brands(self):
             print("Checking all brand links:")
             brand_links = self.driver.find_elements(*Home.BRANDS_LIST)
