@@ -5,9 +5,9 @@ from selenium.webdriver.support.ui import Select
 class SignUp():
     def __init__(self, driver):
         self.driver = driver
-    
-    TITLE = (By.TAG_NAME, "h2")
 
+    # locators 
+    TITLE = (By.TAG_NAME, "h2")
     SIGNUP_NAME_INPUT = (By.XPATH, "//input[@data-qa='signup-name']")
     SIGNUP_EMAIL_INPUT = (By.XPATH, "//input[@data-qa='signup-email']")
     SIGNUP_BUTTON = (By.XPATH, "//button[@data-qa='signup-button']")
@@ -29,16 +29,14 @@ class SignUp():
     ZIPCODE_INPUT = (By.XPATH, "//input[@id='zipcode']")
     MOBILE_NUMBER_INPUT = (By.XPATH, "//input[@id='mobile_number']")
     CREATE_ACCOUNT_BUTTON = (By.XPATH, "//button[normalize-space()='Create Account']")
-
-    
     CONTINUE = (By.XPATH, "//a[normalize-space()='Continue']")
-    # <a href="/logout" style="color:brown;"><i class="fa fa-lock"></i> Logout</a>
     LOGIN_PAGE_BUTTON = (By.XPATH, "//a[@href='/logout' and @class='fa fa-lock']")
     LOGIN_EMAIL_INPUT = (By.XPATH, "//input[@data-qa='login-email']")
     LOGIN_PASSWORD_INPUT = (By.XPATH, "//input[@data-qa='login-password']")
     LOGIN_BUTTON = (By.XPATH, "//button[@data-qa='login-button']")
 
 
+    # signup page and form
     print("---- Signup page ----")
     def sign_up(self, name, email, password,day, month, year, full_name, last_name, company_name, address1, address2, country_name, state, city_name, zipcode, mobile_number):
         print("-- Signup Form --")
@@ -177,6 +175,7 @@ class SignUp():
         print("")
     
 
+    # continue button test 
     def click_continue(self):
         continue_button = self.driver.find_element(*SignUp.CONTINUE)
         self.driver.execute_script("arguments[0].click();", continue_button)
