@@ -22,6 +22,8 @@ class ProductsPage():
 
     # product cards test 
     print("---- Product page ----")
+
+    # product cards test 
     def product_cards(self):
         print("-- Product cards --")
         product_cards = self.driver.find_element(*ProductsPage.PRODUCT_CARDS)
@@ -64,7 +66,7 @@ class ProductsPage():
             print("")
 
     
-    # add to caart button test 
+    # add to cart button test 
     def add_to_cart_buttons(self):
         print("---- Add to cart buttons ----")
         buttons = self.driver.find_elements(*ProductsPage.ADD_TO_CART_BUTTONS)
