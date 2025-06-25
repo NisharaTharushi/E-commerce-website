@@ -10,6 +10,7 @@ class Cart():
     def __init__(self, driver):
         self.driver = driver
 
+    # locators
     CART_PAGE_URL = "https://www.automationexercise.com/view_cart"
     CART_ITEMS = (By.XPATH, "//tr[contains(@id, 'product')]//td")
     REMOVE_PRODUCT = (By.CLASS_NAME, "cart_quantity_delete")
@@ -62,7 +63,7 @@ class Cart():
         time.sleep(2)
         print("")
 
-
+    # cart items display test
     def verify_cart_items_displayed(self):
         print("---- Checking Cart Items ----")
         items = self.driver.find_elements(*Cart.CART_ITEMS)
@@ -72,7 +73,7 @@ class Cart():
             print("Cart is empty or items not displayed.")
         print("")
 
-
+    # remove button test 
     def remove_first_product(self):
         print("---- Removing First Product ----")
         remove_button = self.driver.find_element(*Cart.REMOVE_PRODUCT)
@@ -81,7 +82,7 @@ class Cart():
         time.sleep(2)
         print("")
 
-
+    # checkout button test
     def proceed_to_checkout(self):
         print("---- Proceed to Checkout ----")
         checkout_button = self.driver.find_element(*Cart.PROCEED_CHECKOUT)
@@ -91,7 +92,7 @@ class Cart():
         print("Current URL:", self.driver.current_url)
         print("")
 
-
+    # modal popup test 
     def check_modal_popup_displayed(self):
         print("---- Checking for Checkout Modal Popup ----")
         try:
@@ -104,7 +105,8 @@ class Cart():
             print("Modal popup not found.")
         print("")
 
-
+    
+    # continue with cart icon test 
     def click_continue_with_cart(self):
         print("---- Clicking 'Continue On Cart' ----")
         try:
@@ -113,7 +115,7 @@ class Cart():
                 EC.visibility_of_element_located(Cart.MODAL_POPUP)
             )
 
-            # Now wait for the 'Continue On Cart' link to be clickable
+            # wait for the 'Continue On Cart' link to be clickable
             continue_link = WebDriverWait(self.driver, 5).until(
                 EC.element_to_be_clickable(Cart.CONTINUE_WITH_CART_LINK)
             )
@@ -129,7 +131,7 @@ class Cart():
             print("Modal or link element not found.")
         print("")
 
-
+    # product images test 
     def verify_product_images(self):
         print("---- Verifying Product Images ----")
         images = self.driver.find_elements(*Cart.PRODUCT_IMAGE)
@@ -139,7 +141,7 @@ class Cart():
             print("No product images found.")
         print("")
 
-
+    # cart empty test 
     def is_cart_empty(self):
         print("---- Checking if Cart is Empty ----")
         empty_message = self.driver.find_elements(*Cart.CART_EMPTY_TEXT)
@@ -149,7 +151,7 @@ class Cart():
             print("Cart has items.")
         print("")
 
-
+    # register login button test 
     def click_register_login(self, email_input, password_input):
         print("---- Clicking 'Register / Login' ----")
         try:
