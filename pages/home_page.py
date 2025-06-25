@@ -10,7 +10,7 @@ class Home():
     def __init__(self, driver):
         self.driver = driver
         
-
+    # locators
     LOGO = (By.CSS_SELECTOR, "img[alt='Website for automation practice']")  
     HEADER = (By.CSS_SELECTOR, "header")
     SEARCH_FIELD = (By.ID, "search_product")  
@@ -21,6 +21,7 @@ class Home():
     BRANDS_LIST = (By.XPATH, "//div[@class='brands_products']//li/a")
 
 
+    # home page logo
     print("---- Home page ----")
     def get_logo(self):
         print("Logo:")
@@ -28,9 +29,9 @@ class Home():
         print(logo.get_attribute("src"))
         print("")
 
+    # header
     def get_header(self):
         print("Header:")
-
         header = self.driver.find_element(*Home.HEADER)
         for link in header.find_elements(By.TAG_NAME, "a"):
             print("href: ",link.get_attribute("href"))
@@ -41,6 +42,7 @@ class Home():
         print("")  
 
 
+    # search
     def search_field(self, value):
         print("Search field:")
         search_field = self.driver.find_element(*Home.SEARCH_FIELD)
@@ -56,6 +58,7 @@ class Home():
         time.sleep(2)
 
 
+    # women categories
     def women_categories(self):
         print("---- Women Subcategories: ----")
         category = self.driver.find_element(*Home.WOMEN_PANEL)
@@ -78,6 +81,7 @@ class Home():
             print(f"Couldn't click '{link.text}': {e}")
 
 
+    # men categories
     def men_categories(self):
         print("---- Men Subcategories: ----")
         category = self.driver.find_element(*Home.MEN_PANEL)
@@ -90,6 +94,7 @@ class Home():
         print("")
         
 
+    # kids categories
     def kids_categories(self):
         print("---- Kids Subcategories: ----")
         category = self.driver.find_element(*Home.KIDS_PANEL)
@@ -102,6 +107,7 @@ class Home():
         print("")
 
 
+    # brands test 
     def check_all_brands(self):
         print("Checking all brand links:")
         brand_links = self.driver.find_elements(*Home.BRANDS_LIST)
@@ -116,6 +122,7 @@ class Home():
             print("")
 
 
+    # click brands
     def click_all_brands(self):
             print("Checking all brand links:")
             brand_links = self.driver.find_elements(*Home.BRANDS_LIST)
@@ -139,7 +146,7 @@ class Home():
                     time.sleep(2)
                     print("")
 
-                    # Optional: do something on the brand page, e.g., print heading
+                    # do something on the brand page, e.g., print heading
                     heading = self.driver.find_element(By.TAG_NAME, "h2").text
                     print(f"Brand Page Heading: {heading}")
                     print("open page current url:",self.driver.current_url)
