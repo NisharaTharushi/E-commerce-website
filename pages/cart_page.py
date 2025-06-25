@@ -27,13 +27,14 @@ class Cart():
     REGISTER_LOGIN_LINK = (By.XPATH, "//a[@href='/login']//u[text()='Register / Login']")
     
 
-    
     print("---- Open Product Page and Add Products to Cart ----")
-    # first add first n unique products from products page to cart
+    
+    # open product page 
     def open_products_page(self):
         self.driver.get("https://www.automationexercise.com/products")
         time.sleep(2)
 
+    # add first and unique products to cart
     def add_first_n_unique_products_to_cart(self, n=3):
         print(f"-- Add {n} Unique Products to Cart --")
         wrappers = self.driver.find_elements(*self.PRODUCT_WRAPPERS)
