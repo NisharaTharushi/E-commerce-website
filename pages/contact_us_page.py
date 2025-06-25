@@ -21,7 +21,7 @@ class ContactUsPage:
         self.error_msg = (By.XPATH, "//div[contains(@class,'status alert-danger')]")
 
 
-    
+    # contact us page and form 
     print("---- Contact us page ----")
     def set_name(self, name):
         print("-- Contact Us Form --")  
