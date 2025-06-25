@@ -10,7 +10,6 @@ driver.get("https://www.automationexercise.com/login")
 
 product = SignUp(driver)
 
-
 product.sign_up(
     name="Tharushi",
     email="tharushinishar12@gmail.com",
