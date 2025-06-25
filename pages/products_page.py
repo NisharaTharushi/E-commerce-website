@@ -5,7 +5,7 @@ class ProductsPage():
     def __init__(self, driver):
         self.driver = driver
 
-
+    # locators 
     LOGO = (By.CSS_SELECTOR, "img[alt='Website for automation practice']")  
     HEADER = (By.CSS_SELECTOR, "header")
     SEARCH_FIELD = (By.ID, "search_product")  
@@ -14,13 +14,13 @@ class ProductsPage():
     MEN_PANEL = (By.ID, "Men")
     KIDS_PANEL = (By.ID, "Kids")
     BRANDS_LIST = (By.XPATH, "//div[@class='brands_products']//li/a")
-
     PRODUCT_CARDS = (By.ID, "cartModal")
     ADD_TO_CART_BUTTONS = (By.XPATH, "//a[contains(@class, 'add-to-cart')]")
     CONTINUE_SHOPPING = (By.XPATH, "//button[contains(text(), 'Continue Shopping')]")
     VIEW_PRODUCT_LINKS = (By.XPATH, "//a[contains(text(),'View Product')]")
 
 
+    # product cards test 
     print("---- Product page ----")
     def product_cards(self):
         print("-- Product cards --")
@@ -63,7 +63,8 @@ class ProductsPage():
             print("a tags innerText:",card.get_attribute("innerText"))
             print("")
 
-
+    
+    # add to caart button test 
     def add_to_cart_buttons(self):
         print("---- Add to cart buttons ----")
         buttons = self.driver.find_elements(*ProductsPage.ADD_TO_CART_BUTTONS)
@@ -77,12 +78,11 @@ class ProductsPage():
         print("Done clicking all 'Add to cart' buttons.\n")
 
     
-
+    # view cart button test 
     def view_product_buttons(self):
         print("---- View Product buttons ----")
         view_product_buttons = self.driver.find_elements(*ProductsPage.VIEW_PRODUCT_LINKS)
             
-
         for i in range(len(view_product_buttons)):
             try:
                 # Re-fetch the element before clicking to avoid stale references
@@ -118,7 +118,8 @@ class ProductsPage():
             except Exception as e:
                 print(f"Error on button {i + 1}: {e}")
 
-
+    
+    # logo test 
     def get_logo(self):
         print("---- Logo ----")
         logo = self.driver.find_element(*ProductsPage.LOGO)
@@ -126,6 +127,7 @@ class ProductsPage():
         print("")
 
 
+    # header test 
     def get_header(self):
         print("---- Header ----")
         header = self.driver.find_element(*ProductsPage.HEADER)
@@ -138,7 +140,7 @@ class ProductsPage():
         print("")
 
 
-
+    # categories test 
     def women_categories(self):
         print("---- Women Subcategories ----")
         category = self.driver.find_element(*ProductsPage.WOMEN_PANEL)
