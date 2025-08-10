@@ -56,14 +56,15 @@ This document includes:
 
 ## 🧰 Tech Stack Used
 
-| Tool/Library         | Description                             |
-|----------------------|-----------------------------------------|
-|  Python 3.x         | Main programming language               |
-|  Selenium WebDriver | Browser automation framework            |
-|  POM Pattern        | Structured and scalable automation      |
-|  Pytest             | Test execution framework                |
-|  ChromeDriver       | For automated testing in Chrome         |
-|  GitHub             | Version control and collaboration       |
+Language: Python 3.x
+
+Automation Tool: Selenium WebDriver
+
+Testing Framework: Pytest
+
+Design Pattern: Page Object Model (POM)
+
+Browser Drivers: ChromeDriver and GeckoDriver (Firefox)
 
 ---
 
@@ -102,5 +103,6 @@ Ecommerce-UI-Testing/
    ```bash
    git clone https://github.com/your-username/ecommerce-ui-testing.git
    cd ecommerce-ui-testing
+
 
 
