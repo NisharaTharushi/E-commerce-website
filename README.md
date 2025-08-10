@@ -2,11 +2,11 @@
 
 ###  Project Overview 🌐
 
-This repository contains **automated UI and functional test scripts** developed using **Python, Selenium WebDriver**, and the **Page Object Model (POM)** for:
+This project contains automated test scripts written in Python using Selenium WebDriver, the Page Object Model (POM) design pattern and Pytest for the demo healthcare appointment website.
 
 🔗 [E-Commerce Website](https://www.automationexercise.com)
 
-> This E-Commerce demo site is designed for practicing web automation. It simulates a real-world shopping experience with user registration, login, product browsing, cart management, and contact forms — making it ideal for learning and showcasing UI automation skills.
+This E-Commerce demo site is designed for practicing web automation. It simulates a real-world shopping experience with user registration, login, product browsing, cart management, and contact forms — making it ideal for learning and showcasing UI automation skills.
 
 ---
 
@@ -60,8 +60,6 @@ Language: Python 3.x
 
 Automation Tool: Selenium WebDriver
 
-Testing Framework: Pytest
-
 Design Pattern: Page Object Model (POM)
 
 Browser Drivers: ChromeDriver and GeckoDriver (Firefox)
@@ -103,6 +101,7 @@ Ecommerce-UI-Testing/
    ```bash
    git clone https://github.com/your-username/ecommerce-ui-testing.git
    cd ecommerce-ui-testing
+
 
 
 
